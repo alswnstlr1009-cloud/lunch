@@ -6,7 +6,7 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 16:21:00 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/18 20:04:32 by jmin             ###   ########.fr       */
+/*   Updated: 2025/12/23 20:07:18 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,9 @@ size_t ft_strlcat(char *dst, const char *src, size_t size)
 #include <stdio.h>
 int main()
 {
-	char dst[] = "1234";
-	const char src[] = "abcd";
-	size_t size = 3;
+	char dst[] = "hello";
+	const char src[] = "world";
+	size_t size = 12;
 	size_t ret = ft_strlcat(dst, src, size);
 
 	printf("after : %s\n", dst);
@@ -53,3 +53,7 @@ int main()
 
 	return 0;
 }
+
+
+// 일부라도 복사가 되면 => dest+strcat 정해진값을 뱉고
+// 아예 복사가 안되면 => src+size    잘못된값을 뱉고
