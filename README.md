@@ -3,3 +3,16 @@ First update "1"
 added is isalpha ~ atoi
 working with calloc.
 Malloc Calloc is used because memory should allocated when compiling.
+
+
+2025.12.25 11:00
+"2" updated.
+added calloc
+working with strdup
+
+strlcat reviewd, this function is cat after dest, return is src+dest length or src+size(3rd factor)
+return src+size when nothing is catted. If anything catted, then src+dest is return.
+In function, only return (dest length + src length) exist. But I made size = length when size is lesser
+with while((len_d < size) && (dst[len_d] != '\0'))
+
+Calloc is malloc with members and size of member. And then put every member as zero.
