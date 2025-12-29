@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/23 19:11:02 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/25 11:24:51 by jmin             ###   ########.fr       */
+/*   Created: 2025/12/25 11:25:39 by jmin              #+#    #+#             */
+/*   Updated: 2025/12/25 13:07:52 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include <stdlib.h>
 
-char *ft_strdup(const char *s)
+char *ft_substr(char const *s, unsigned int start, size_t len)
 {
-	unsigned int mem;
 	char *ret;
 	unsigned int i;
+	size_t s_len;
 
-	mem = 0;
-	while(s[mem] != '\0')
-		mem++;
-	ret = (char *)malloc(mem + 1);
+	s_len = 0;
+	while (s[s_len])
+		s_len++;
+	ret = (char*)malloc(len+1);
 	if (!ret)
 		return NULL;
 	i = 0;
-	while (i < mem)
+	while (i < len && start < s_len)
 	{
-		ret[i] = s[i];
+		ret[i] = s[start + i];
 		i++;
 	}
 	ret[i] = '\0';
@@ -36,10 +35,16 @@ char *ft_strdup(const char *s)
 }
 
 #include <stdio.h>
+#include <string.h>
 int main(){
-	const char *s = "abc";
-	
-	printf("return ft: %s\n", ft_strdup(s));
-	printf("return : %s\n", strdup(s));
+	char const *s = "abc";
+	unsigned int start = 10;
+	size_t len = 3;
+
+	printf("return : %s\n", ft_substr(s, start, len));
+	char *sub = ft_substr(s, start, len);
+	printf("len = %zu\n", strlen(sub));
+	free(sub);
+
 	return 0;
 }
