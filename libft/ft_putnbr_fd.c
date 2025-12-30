@@ -1,22 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/17 16:05:15 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/29 20:58:07 by jmin             ###   ########.fr       */
+/*   Created: 2025/12/29 16:42:20 by jmin              #+#    #+#             */
+/*   Updated: 2025/12/29 18:06:51 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <unistd.h>
 
-typedef struct s_list
+void ft_putnbr_fd(int n, int fd)
 {
-	void	*content;
-	struct	s_list	*next;
-}	t_list;
+	char a;
+	long nbr;
 
-#endif
+	nbr = n;
+	if (n < 0)
+	{
+		write(fd, "-", 1);
+		nbr = -nbr;
+	}
+	a = nbr % 10 + '0';
+	if (nbr >= 10)
+		ft_putnbr_fd(nbr / 10, fd);
+	write(fd, &a, 1);
+	return ;
+}
+
+// int main() {
+// 	int n = -1344;
+
+// 	ft_putnbr_fd(n, 1);
+// 	return 0;
+// }

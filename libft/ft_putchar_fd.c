@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/17 16:05:15 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/29 20:58:07 by jmin             ###   ########.fr       */
+/*   Created: 2025/12/29 16:15:13 by jmin              #+#    #+#             */
+/*   Updated: 2025/12/29 16:54:51 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <unistd.h>
 
-typedef struct s_list
+void ft_putchar_fd(char c, int fd)
 {
-	void	*content;
-	struct	s_list	*next;
-}	t_list;
+	write(fd, &c, 1);
+}
 
-#endif
+// int main(){
+// 	ft_putchar_fd('a',1);
+// 	return 0;
+// }

@@ -6,7 +6,7 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/22 15:00:20 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/22 16:11:12 by jmin             ###   ########.fr       */
+/*   Updated: 2025/12/29 17:07:48 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,21 @@ void *ft_memchr(const void *s, int c, size_t n)
 	i = 0;
 	while (i < n)
 	{
-		if ((const unsigned char)p[i] == (unsigned char)c)
+		if (p[i] == (unsigned char)c)
 			return (void *)&p[i];
 		i++;
 	}
 	return NULL;
 }
+
+// #include<stdio.h>
+// int main() {
+//     char *str = "abc";
+//     void *ptr = ft_memchr(str, 'b', 3); // 'b'를 3바이트 안에서 찾음
+
+//     if (ptr)
+//         printf("찾은 문자 이후: %s\n", (char *)ptr);
+//     else
+//         printf("문자를 찾지 못했습니다.\n");
+//     return 0;
+// }

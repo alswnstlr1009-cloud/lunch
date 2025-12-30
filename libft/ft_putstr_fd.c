@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/17 16:05:15 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/29 20:58:07 by jmin             ###   ########.fr       */
+/*   Created: 2025/12/29 16:26:20 by jmin              #+#    #+#             */
+/*   Updated: 2025/12/29 16:51:20 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <unistd.h>
 
-typedef struct s_list
+void ft_putstr_fd(char *s, int fd)
 {
-	void	*content;
-	struct	s_list	*next;
-}	t_list;
-
-#endif
+	int i;
+	
+	if (!s)
+		return ;
+	i = 0;
+	while (s[i])
+	{	
+		write(fd, &s[i], 1);
+		i++;
+	}
+}

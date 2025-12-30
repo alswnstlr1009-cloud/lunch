@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/17 16:05:15 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/29 20:58:07 by jmin             ###   ########.fr       */
+/*   Created: 2025/12/29 21:01:15 by jmin              #+#    #+#             */
+/*   Updated: 2025/12/29 21:01:59 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-typedef struct s_list
+void ft_lstadd_front(t_list **lst, t_list *new)
 {
-	void	*content;
-	struct	s_list	*next;
-}	t_list;
-
-#endif
+		
+}
