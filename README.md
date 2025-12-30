@@ -36,3 +36,11 @@ while(i < len)
 word[i] = s[i];
 i++;
 }
+
+2025.12.30 14:17
+"4" updated.
+added itoa ~ lstnew
+woriking with lstadd_front.
+in struct, '.' means contact to something.
+'->' means '(*).' which is contact to pointer.
+-> will use by malloc and heap teritory. it will use to list of struct.
