@@ -44,3 +44,11 @@ woriking with lstadd_front.
 in struct, '.' means contact to something.
 '->' means '(*).' which is contact to pointer.
 -> will use by malloc and heap teritory. it will use to list of struct.
+
+2026.01.02 16:08
+"5" updated.
+added lstadd_front ~ lstclear
+woriking with lstiter.
+void ft_lstiter(t_list *lst, void (*f)(void *)) 
+void(*f)(void*) ex) ft_lstiter(lst, function) take function to use.
+no need to &function cause function is first so it can use it as address.
