@@ -52,3 +52,12 @@ woriking with lstiter.
 void ft_lstiter(t_list *lst, void (*f)(void *)) 
 void(*f)(void*) ex) ft_lstiter(lst, function) take function to use.
 no need to &function cause function is first so it can use it as address.
+
+2026.01.03 14:34 
+"6" updated.
+added lstiter ~ lstmap.
+working with norminette.
+if **ptr; ptr = &target;
+when *ptr = new;
+that means target = new;
+using double pointer can change target by touching pointer.
