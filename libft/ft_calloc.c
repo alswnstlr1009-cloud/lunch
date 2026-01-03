@@ -6,12 +6,11 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/23 15:47:46 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/23 19:10:35 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/03 11:09:50 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include <stdint.h>
 
 void *ft_calloc(size_t nmemb, size_t size)
 {
@@ -21,7 +20,7 @@ void *ft_calloc(size_t nmemb, size_t size)
 
 	if (nmemb == 0 || size == 0)
 		return malloc(0);
-	if (nmemb > SIZE_MAX / size)
+	if (nmemb > (size_t)-1 / size)
 		return NULL;
 
 	whole = nmemb * size;
