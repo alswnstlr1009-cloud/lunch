@@ -61,3 +61,27 @@ if **ptr; ptr = &target;
 when *ptr = new;
 that means target = new;
 using double pointer can change target by touching pointer.
+
+2026.01.04 11:02
+"7" updated.
+norminette isalpha ~ strdup.
+woriking with norminette.
+In strrchr, can work with one forward loop.
+// char *ft_strrchr(const char *s, int c)
+// {
+// 	const char *last;
+
+// 	last = NULL;
+// 	while (1)
+// 	{
+// 		if (*s == (char)c)
+// 			last = s;
+// 		if (*s == '\0')
+// 			break;
+// 		s++;
+// 	}
+// 	return ((char *)last);
+// }
+poiner variable last will be marker and that marker will change to latest character.
+
+
