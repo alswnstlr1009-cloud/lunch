@@ -6,13 +6,13 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 20:04:52 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/18 20:51:01 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/03 17:00:19 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ctype.h>
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if ((c >= 'a') && (c <= 'z'))
 		c += 'A' - 'a';

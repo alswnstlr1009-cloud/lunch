@@ -6,25 +6,25 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/23 19:11:02 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/25 11:24:51 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/03 21:27:43 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdlib.h>
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
-	unsigned int mem;
-	char *ret;
-	unsigned int i;
+	size_t	mem;
+	char	*ret;
+	size_t	i;
 
 	mem = 0;
-	while(s[mem] != '\0')
+	while (s[mem] != '\0')
 		mem++;
 	ret = (char *)malloc(mem + 1);
 	if (!ret)
-		return NULL;
+		return (NULL);
 	i = 0;
 	while (i < mem)
 	{
@@ -32,14 +32,28 @@ char *ft_strdup(const char *s)
 		i++;
 	}
 	ret[i] = '\0';
-	return ret;
+	return (ret);
 }
 
-#include <stdio.h>
-int main(){
-	const char *s = "abc";
-	
-	printf("return ft: %s\n", ft_strdup(s));
-	printf("return : %s\n", strdup(s));
-	return 0;
-}
+// #include <stdio.h>
+// int main(){
+// 	const char *s = "abc";
+
+// 	printf("return ft: %s\n", ft_strdup(s));
+// 	printf("return : %s\n", strdup(s));
+// 	return 0;
+// }
+
+// char *ft_strdup(const char *s)
+// {
+// 	size_t mem;
+// 	char *ret;
+// 	size_t i;	
+
+// 	mem = ft_strlen(s);
+// 	ret = ft_calloc(mem + 1, sizeof(char));
+// 	if (!ret)
+// 		return NULL;
+// 	ft_memcpy(ret, s, mem);
+// 	return ret;
+// }

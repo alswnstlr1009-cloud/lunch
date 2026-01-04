@@ -6,11 +6,19 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 17:31:56 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/17 17:52:23 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/03 15:04:15 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
-	return(c >= 0 && c <= 127);
+	return (c >= 0 && c <= 127);
 }
+
+// #include <stdio.h>
+
+// int main(){
+// 	int test = 66;
+// 	printf("매개변수: %c\n0아니면아스키: %d", test, ft_isascii(test));
+// 	return 0;
+// }

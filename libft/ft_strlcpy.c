@@ -6,30 +6,30 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 15:08:49 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/18 16:20:45 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/03 16:48:23 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 
-size_t ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t i;
-	size_t len;
+	size_t	i;
+	size_t	len;
 
+	len = 0;
+	while (src[len] != '\0')
+		len++;
+	if (size == 0)
+		return (len);
 	i = 0;
-	while((i < size-1) && (src[i] != '\0'))
+	while ((i < size - 1) && (src[i] != '\0'))
 	{
 		dst[i] = src[i];
 		i++;
 	}
 	dst[i] = '\0';
-	
-	len = 0;
-	while(src[len] != '\0')
-		len++;
-	
-	return(len);
+	return (len);
 }
 
 // #include<stdio.h>
@@ -37,12 +37,12 @@ size_t ft_strlcpy(char *dst, const char *src, size_t size)
 // {
 // 	char dst[] = "1234";
 // 	const char src[] = "abcd";
-// 	size_t size = 3;
+// 	size_t size = 1;
 
 // 	printf("before : %s\n" ,dst);
 // 	ft_strlcpy(dst, src, size);
 // 	printf("after : %s\n", dst);
-// 	printf("%zu", ft_strlcpy(dst,src,size));
+// 	printf("return : %zu", ft_strlcpy(dst,src,size));
 
 // 	return 0;
 // }

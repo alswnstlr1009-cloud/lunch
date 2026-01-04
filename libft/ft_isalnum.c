@@ -6,11 +6,21 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 17:29:50 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/17 17:52:19 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/03 15:01:39 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
-	return ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9'));
+	return ((c >= 'A' && c <= 'Z')
+		|| (c >= 'a' && c <= 'z') || (c >= '0' && c <= '9'));
 }
+
+// #include <stdio.h>
+
+// int main(){
+// 	int test = 'a';
+
+// 	printf("매개변수: %c\n0아니면 알파벳혹은숫자: %d", test, ft_isalnum(test));
+// 	return 0;
+// }
