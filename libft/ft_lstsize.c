@@ -6,11 +6,10 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 10:22:11 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/02 11:06:03 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/04 21:10:42 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 int ft_lstsize(t_list *lst)

@@ -6,12 +6,11 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 11:15:52 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/02 11:36:49 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/04 21:10:30 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
 t_list *ft_lstlast(t_list *lst)
 {

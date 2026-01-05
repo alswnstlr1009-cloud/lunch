@@ -6,7 +6,7 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 21:01:15 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/02 10:21:05 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/05 11:53:39 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,4 +18,9 @@ void ft_lstadd_front(t_list **lst, t_list *new)
 		return ;
 	new->next = *lst;
 	*lst = new;
+}
+
+#include <stdio.h>
+int main(){
+	
 }

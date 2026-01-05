@@ -6,11 +6,11 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 12:53:59 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/03 16:05:55 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/04 21:11:14 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

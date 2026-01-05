@@ -6,11 +6,11 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 16:21:00 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/03 16:58:48 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/04 21:12:20 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {

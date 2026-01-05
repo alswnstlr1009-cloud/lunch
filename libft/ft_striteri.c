@@ -6,18 +6,18 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 15:05:21 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/29 18:18:45 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/04 19:58:47 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned int i;
-	
+	unsigned int	i;
+
 	if (!s || !f)
-        return ;
+		return ;
 	i = 0;
-	while(s[i])
+	while (s[i])
 	{
 		f(i, &s[i]);
 		i++;
@@ -36,7 +36,6 @@ void ft_striteri(char *s, void (*f)(unsigned int, char*))
 //             *c -= 32; // 소문자를 대문자로 변환
 //     }
 // }
-
 
 // int main(void)
 // {

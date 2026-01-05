@@ -6,11 +6,10 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 16:06:17 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/02 16:43:34 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/04 21:10:27 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 void ft_lstiter(t_list *lst, void (*f)(void *))

@@ -6,16 +6,16 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 16:42:20 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/29 18:06:51 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/04 21:11:41 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-	char a;
-	long nbr;
+	char	a;
+	long	nbr;
 
 	nbr = n;
 	if (n < 0)
@@ -31,7 +31,7 @@ void ft_putnbr_fd(int n, int fd)
 }
 
 // int main() {
-// 	int n = -1344;
+// 	int n = 483648;
 
 // 	ft_putnbr_fd(n, 1);
 // 	return 0;

@@ -6,11 +6,11 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/22 19:24:35 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/03 20:37:21 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/04 21:15:23 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static int	skip_space(const char *nptr, int i)
 {

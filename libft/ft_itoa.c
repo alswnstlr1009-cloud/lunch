@@ -6,16 +6,16 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 10:55:02 by jmin              #+#    #+#             */
-/*   Updated: 2025/12/29 14:14:39 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/04 21:10:06 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
-static int get_len(int n)
+static	int	get_len(int n)
 {
-	int len;
-	
+	int	len;
+
 	len = 0;
 	if (n <= 0)
 		len = 1;
@@ -27,46 +27,37 @@ static int get_len(int n)
 	return (len);
 }
 
-static void fill_str(char *str, unsigned int num, int len)
+char	*ft_itoa(int n)
 {
-	while(num > 0)
-	{
-		str[--len] = num % 10 + '0';
-		num = num / 10;
-	}
-}
+	char			*str;
+	unsigned int	num;
+	int				len;
 
-
-char *ft_itoa(int n)
-{
-	char *str;
-	unsigned int num;
-	int len;
-
-	if (n < 0)
-		num = -n;
-	else
-		num = n;
 	len = get_len(n);
-	str = (char*)malloc(len + 1);
+	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
 	str[len] = '\0';
-	fill_str(str, num, len);
 	if (n < 0)
-		str[0] = '-';
+		num = (unsigned int)-n;
+	else
+		num = (unsigned int)n;
 	if (n == 0)
 		str[0] = '0';
-	
+	while (num > 0)
+	{
+		str[--len] = num % 10 + '0';
+		num /= 10;
+	}
+	if (n < 0)
+		str[0] = '-';
 	return (str);
 }
 
 #include <stdio.h>
 
 int main(){
-	int n = 123;
-	
+	int n = -2147483648;
 	printf("%s\n", ft_itoa(n));
 	return 0;
 }
-
