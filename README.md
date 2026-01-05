@@ -84,4 +84,11 @@ In strrchr, can work with one forward loop.
 // }
 poiner variable last will be marker and that marker will change to latest character.
 
+2026.01.05
+"8" updated.
+norminette substr ~ lstnew.
+woriking with lstadd.
+In split, I used while (*s && *s == c) s++;
+this type of pointer moving, must use *s check to not enter to NULL.
+
 
