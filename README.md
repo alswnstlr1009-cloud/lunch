@@ -91,4 +91,9 @@ woriking with lstadd.
 In split, I used while (*s && *s == c) s++;
 this type of pointer moving, must use *s check to not enter to NULL.
 
+2026.01.06 13:28
+"9" updated.
+norminette lstadd~lstmap.
+checked whole again.
+
 
