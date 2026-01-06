@@ -6,7 +6,7 @@
 #    By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/15 16:28:40 by jmin              #+#    #+#              #
-#    Updated: 2026/01/05 11:51:11 by jmin             ###   ########.fr        #
+#    Updated: 2026/01/05 17:28:28 by jmin             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,3 +42,6 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+so:
+	$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
+	$(CC) -shared -o libft.so $(OBJS)

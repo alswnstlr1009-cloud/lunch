@@ -6,24 +6,24 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 12:10:59 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/04 21:10:21 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/05 14:07:29 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// static void del(void *content)
-// {
-// 	free(content);
-// }
-
-void ft_lstdelone(t_list *lst, void (*del)(void*))
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
 	if (!lst || !del)
 		return ;
 	del(lst->content);
 	free(lst);
 }
+
+// static void del(void *content)
+// {
+// 	free(content);
+// }
 
 // #include <stdio.h>
 // #include <string.h>

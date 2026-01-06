@@ -6,19 +6,19 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 11:15:52 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/04 21:10:30 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/05 13:17:56 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
 	if (lst == NULL)
 		return (NULL);
 	while (lst->next != NULL)
 		lst = lst->next;
-	return lst;
+	return (lst);
 }
 
 // #include <stdio.h>

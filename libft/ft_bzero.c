@@ -6,7 +6,7 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 20:20:30 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/04 21:09:42 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/05 15:05:02 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ void	ft_bzero(void *s, size_t n)
 // int main(){
 // 	char str[] = "123";
 // 	size_t n = 2;
-	
 // 	printf("변경 전: %c, %c, %c\n", str[0], str[1], str[2]);
 // 	ft_bzero(str, n);
 // 	printf("변경 후: %c, %c, %c", str[0], str[1], str[2]);

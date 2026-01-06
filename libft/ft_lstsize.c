@@ -6,15 +6,15 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 10:22:11 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/04 21:10:42 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/05 14:52:29 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (lst != NULL)
@@ -22,7 +22,7 @@ int ft_lstsize(t_list *lst)
 		lst = lst->next;
 		i++;
 	}
-	return i;
+	return (i);
 }
 
 // #include <stdio.h>

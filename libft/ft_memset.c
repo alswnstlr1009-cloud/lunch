@@ -6,7 +6,7 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 19:17:28 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/04 21:11:20 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/05 15:03:12 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	size_t	i;
+	size_t			i;
 	unsigned char	*ptr;
 
 	i = 0;

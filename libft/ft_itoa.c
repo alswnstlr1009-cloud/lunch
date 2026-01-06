@@ -6,7 +6,7 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 10:55:02 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/04 21:10:06 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/05 15:02:21 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,10 +54,10 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main(){
-	int n = -2147483648;
-	printf("%s\n", ft_itoa(n));
-	return 0;
-}
+// int main(){
+// 	int n = -2147483648;
+// 	printf("%s\n", ft_itoa(n));
+// 	return 0;
+// }

@@ -6,15 +6,15 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 11:37:00 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/04 21:10:11 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/05 13:46:22 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *last;
+	t_list	*last;
 
 	if (!new)
 		return ;

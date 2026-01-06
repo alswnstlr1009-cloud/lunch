@@ -6,18 +6,17 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 16:06:17 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/04 21:10:27 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/05 14:41:35 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst || !f)
 		return ;
-
-	while(lst)
+	while (lst)
 	{
 		f(lst->content);
 		lst = lst->next;
@@ -26,7 +25,6 @@ void ft_lstiter(t_list *lst, void (*f)(void *))
 
 // #include <stdio.h>
 // #include <string.h>
-
 
 // void make_0(void *content)
 // {
@@ -43,6 +41,6 @@ void ft_lstiter(t_list *lst, void (*f)(void *))
 // 	printf("전: %s\n %s\n", (char *)n1->content, (char *)n2->content);
 // 	ft_lstiter(n1, make_0);
 // 	printf("후: %s\n %s\n", (char *)n1->content, (char *)n2->content);
-//  ft_lstclear(&n1, free);
+// 	ft_lstclear(&n1, free);
 // 	return 0;
 // }
