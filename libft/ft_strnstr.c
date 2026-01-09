@@ -6,7 +6,7 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/22 16:59:22 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/04 21:12:39 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/09 09:48:37 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 }
 
 // #include<stdio.h>
+// #include<string.h>
 
 // int main()
 // {
@@ -40,6 +41,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 // 	const char *little = "bcd";
 // 	size_t len = 5;
 
-// 	printf("%s", ft_strnstr(big, little, len));
+// 	printf("%s\n", ft_strnstr(big, little, len));
 // 	return 0;
 // }

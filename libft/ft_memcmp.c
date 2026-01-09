@@ -6,7 +6,7 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/22 16:11:24 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/04 21:11:00 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/09 09:49:34 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 }
 
 // #include <stdio.h>
+// #include <string.h>
 
 // int main(){
 // 	size_t				n = 3;
@@ -40,6 +41,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 // 	const unsigned char	*p2 = (const unsigned char *)"abd";
 
 // 	printf("p1: %s\np2: %s\n",p1, p2);
-// 	printf("return: %d", ft_memcmp(p1,p2,n));
+// 	printf("return: %d\n", ft_memcmp(p1,p2,n));
+// 	printf("return: %d", memcmp(p1,p2,n));
 // 	return 0;
 // }

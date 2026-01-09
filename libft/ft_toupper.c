@@ -6,7 +6,7 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 20:04:52 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/04 21:13:47 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/09 09:44:12 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,13 @@ int	ft_toupper(int c)
 }
 
 // #include <stdio.h>
+// #include<ctype.h>
 // int main()
 // {
 // 	int c = 'a';
-// 	printf("%c", ft_toupper(c));
+// 	int d = 'a';
+// 	printf("%c\n", ft_toupper(c));
+// 	printf("%c", toupper(d));
 
 // 	return 0;
 // }

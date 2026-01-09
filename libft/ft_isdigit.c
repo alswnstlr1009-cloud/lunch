@@ -6,7 +6,7 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/17 17:27:33 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/03 14:57:58 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/09 09:13:48 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,12 @@ int	ft_isdigit(int c)
 }
 
 // #include <stdio.h>
+// #include <ctype.h>
 
 // int main(){
 // 	int test = '3';
 
-// 	printf("매개변수: %c\n0이면10진수아님: %d", test, ft_isdigit(test));
+// 	printf("매개변수: %c\n0이면10진수아님: %d\n", test, ft_isdigit(test));
+// 	printf("매개변수: %c\n0이면10진수아님: %d", test, !!isdigit(test));
 // 	return 0;
 // }

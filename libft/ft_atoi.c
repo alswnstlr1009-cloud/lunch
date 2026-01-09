@@ -6,7 +6,7 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/22 19:24:35 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/04 21:15:23 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/09 09:51:02 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ int	ft_atoi(const char *nptr)
 // {
 // 	const char	*nptr = "    +-123";
 
-// 	printf("%d", ft_atoi(nptr));
+// 	printf("%d\n", ft_atoi(nptr));
+// 	printf("%d", atoi(nptr));
 // 	return (0);
 // }

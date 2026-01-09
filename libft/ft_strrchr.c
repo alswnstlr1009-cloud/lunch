@@ -6,7 +6,7 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/22 13:47:54 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/04 21:14:13 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/09 09:47:10 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,28 +33,14 @@ char	*ft_strrchr(const char *s, int c)
 }
 
 // #include <stdio.h>
+// #include <string.h>
 
 // int main(){
 // 	const char *str = "1234";
 // 	int chr = '3';
 
 // 	printf("str: %s\nchr: %c\n", str, chr);
-// 	printf("return: %s", ft_strrchr(str, chr));
+// 	printf("return: %s\n", ft_strrchr(str, chr));
+// 	printf("return: %s", strrchr(str, chr));
 // 	return 0;
-// }
-
-// char *ft_strrchr(const char *s, int c)
-// {
-// 	const char *last;
-
-// 	last = NULL;
-// 	while (1)
-// 	{
-// 		if (*s == (char)c)
-// 			last = s;
-// 		if (*s == '\0')
-// 			break;
-// 		s++;
-// 	}
-// 	return ((char *)last);
 // }
