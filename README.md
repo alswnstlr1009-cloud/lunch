@@ -102,4 +102,12 @@ norminette all.
 in readme, # will make it title.
 in makefile, should not make other file like so(to test).
 
+2026.01.15 13:17
+"s" updated.
+starting printf.
+printf use '...' which is variadic arguments. To use them need to use #include <stdarg.h>, va_list format,
+va_start, va_arg and va_end macros. I'm gonna use format distinguisher when string meet % character. Others will just putchar.
+To prevent just one % character making undefied result, i'm gonna use (format[i] == % && format[i + 1]). This make sure % used as format specifier.
+
+
 
