@@ -96,4 +96,10 @@ this type of pointer moving, must use *s check to not enter to NULL.
 norminette lstadd~lstmap.
 checked whole again.
 
+2026.01.09 10:53
+"10" updated.
+norminette all.
+in readme, # will make it title.
+in makefile, should not make other file like so(to test).
+
 
