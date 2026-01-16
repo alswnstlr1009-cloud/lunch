@@ -6,16 +6,16 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 20:32:37 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/16 11:39:09 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/16 20:36:07 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 
-int ft_unsigned(unsigned int n)
+int	ft_unsigned(unsigned int n)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	if (n >= 10)

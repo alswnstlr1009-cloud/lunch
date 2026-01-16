@@ -6,16 +6,16 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/15 20:58:19 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/16 12:14:25 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/16 20:36:13 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft/libft.h"
 #include "ft_printf.h"
 
-int ft_hexadecimal(unsigned int n)
+int	ft_hexadecimal(unsigned int n)
 {
-	int len;
+	int	len;
 
 	len = 0;
 	if (n >= 16)
@@ -24,12 +24,11 @@ int ft_hexadecimal(unsigned int n)
 	return (len);
 }
 
-#include <stdio.h>
-#include <unistd.h>
+// #include <stdio.h>
+// #include <unistd.h>
 
-
-int main(){
-	printf("%s", (char *)NULL);
-	// write(1, &"%", 1);
-	return 0;
-}
+// int main(){
+// 	printf("%s", (char *)NULL);
+// 	// write(1, &"%", 1);
+// 	return 0;
+// }

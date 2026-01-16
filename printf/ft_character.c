@@ -6,14 +6,14 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 13:37:16 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/16 13:50:52 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/16 20:36:14 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
 int	ft_character(int c)
-	{
-		write(1, &c, 1);
-		return 1;
-	}
+{
+	write(1, &c, 1);
+	return (1);
+}

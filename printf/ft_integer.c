@@ -6,24 +6,28 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 14:42:25 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/16 14:48:32 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/16 20:38:29 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
+#include "libft/libft.h"
 
-int ft_integer(int i)
+int	ft_integer(int i)
 {
-	int len_i;
-	
+	int	len_i;
+
+	len_i = 0;
 	ft_putnbr_fd(i, 1);
-	if (i < 0)
+	if (i <= 0)
+	{
 		i *= -1;
-	len_i = 1;
-	while (i < 10)
+		len_i += 1;
+	}
+	while (i != 0)
 	{
 		i /= 10;
 		len_i++;
 	}
-	return (len_i);	
+	return (len_i);
 }

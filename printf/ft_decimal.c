@@ -6,22 +6,28 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 14:39:18 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/16 14:41:48 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/16 20:36:13 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
+#include "libft/libft.h"
 
-int ft_decimal(int d)
+int	ft_decimal(int i)
 {
-	int len_d;
+	int	len_i;
 
-	len_d = 0;
-	ft_putnbr_fd(d, 1);
-	while (d < 10)
+	len_i = 0;
+	ft_putnbr_fd(i, 1);
+	if (i <= 0)
 	{
-		d /= 10;
-		len_d++;
+		i *= -1;
+		len_i += 1;
 	}
-	return (len_d);
+	while (i != 0)
+	{
+		i /= 10;
+		len_i++;
+	}
+	return (len_i);
 }

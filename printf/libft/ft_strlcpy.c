@@ -6,7 +6,7 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 15:08:49 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/09 13:15:30 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/09 09:42:39 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,17 +32,17 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (len);
 }
 
-#include<stdio.h>
-int main()
-{
-	char dst[] = "1234";
-	const char src[] = "abcd";
-	size_t size = 3;
+// #include<stdio.h>
+// int main()
+// {
+// 	char dst[] = "1234";
+// 	const char src[] = "abcd";
+// 	size_t size = 1;
 
-	printf("before : %s\n" ,dst);
-	ft_strlcpy(dst, src, size);
-	printf("after : %s\n", dst);
-	printf("return : %zu", ft_strlcpy(dst,src,size));
+// 	printf("before : %s\n" ,dst);
+// 	ft_strlcpy(dst, src, size);
+// 	printf("after : %s\n", dst);
+// 	printf("return : %zu", ft_strlcpy(dst,src,size));
 
-	return 0;
-}
+// 	return 0;
+// }

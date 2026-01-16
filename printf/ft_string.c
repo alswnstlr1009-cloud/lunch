@@ -6,15 +6,15 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 14:30:32 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/16 14:36:00 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/16 20:36:08 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "printf.h"
+#include "ft_printf.h"
 
 int	ft_string(char *s)
 {
-	int len_s;
+	int	len_s;
 
 	if (!s)
 		s = "(null)";

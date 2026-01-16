@@ -6,7 +6,7 @@
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/29 16:26:20 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/09 16:59:09 by jmin             ###   ########.fr       */
+/*   Updated: 2026/01/04 21:11:52 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ void	ft_putstr_fd(char *s, int fd)
 	}
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main(){
-	ft_putstr_fd("123", 1);
-	return 0;
-}
+// int main(){
+// 	ft_putstr_fd("123", 1);
+// 	return 0;
+// }
