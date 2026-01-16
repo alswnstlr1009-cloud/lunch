@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_decimal.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/15 14:58:52 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/16 14:55:20 by jmin             ###   ########.fr       */
+/*   Created: 2026/01/16 14:39:18 by jmin              #+#    #+#             */
+/*   Updated: 2026/01/16 14:41:48 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdarg.h>
+#include "printf.h"
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+int ft_decimal(int d)
+{
+	int len_d;
 
-int	ft_printf(const char *format, ...);
-int	ft_character(int c);
-int	ft_string(char *s);
-int ft_pointer(void *ptr);
-int ft_decimal(int d);
-int ft_integer(int i);
-int ft_unsigned(unsigned int n);
-int ft_hexadecimal(unsigned int n);
-int ft_HEXADECIMAL(unsigned int n);
-
-
-#endif
+	len_d = 0;
+	ft_putnbr_fd(d, 1);
+	while (d < 10)
+	{
+		d /= 10;
+		len_d++;
+	}
+	return (len_d);
+}

@@ -1,29 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_pointer.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/15 14:58:52 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/16 14:55:20 by jmin             ###   ########.fr       */
+/*   Created: 2026/01/16 14:36:37 by jmin              #+#    #+#             */
+/*   Updated: 2026/01/16 14:38:31 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdarg.h>
+#include "printf.h"
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
+int ft_pointer(void *p)
+{
+	int len_p;
 
-int	ft_printf(const char *format, ...);
-int	ft_character(int c);
-int	ft_string(char *s);
-int ft_pointer(void *ptr);
-int ft_decimal(int d);
-int ft_integer(int i);
-int ft_unsigned(unsigned int n);
-int ft_hexadecimal(unsigned int n);
-int ft_HEXADECIMAL(unsigned int n);
-
-
-#endif
+	len_p = 0;
+	while (p)
+	{
+		write(1, &p, 1);
+		p++;
+		len_p++;
+	}
+	return (len_p);	
+}

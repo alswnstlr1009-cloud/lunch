@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_integer.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jmin <jmin@student.42gyeongsan.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/15 14:58:52 by jmin              #+#    #+#             */
-/*   Updated: 2026/01/16 14:55:20 by jmin             ###   ########.fr       */
+/*   Created: 2026/01/16 14:42:25 by jmin              #+#    #+#             */
+/*   Updated: 2026/01/16 14:48:32 by jmin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdarg.h>
+#include "printf.h"
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
-
-int	ft_printf(const char *format, ...);
-int	ft_character(int c);
-int	ft_string(char *s);
-int ft_pointer(void *ptr);
-int ft_decimal(int d);
-int ft_integer(int i);
-int ft_unsigned(unsigned int n);
-int ft_hexadecimal(unsigned int n);
-int ft_HEXADECIMAL(unsigned int n);
-
-
-#endif
+int ft_integer(int i)
+{
+	int len_i;
+	
+	ft_putnbr_fd(i, 1);
+	if (i < 0)
+		i *= -1;
+	len_i = 1;
+	while (i < 10)
+	{
+		i /= 10;
+		len_i++;
+	}
+	return (len_i);	
+}
