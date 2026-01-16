@@ -109,5 +109,9 @@ printf use '...' which is variadic arguments. To use them need to use #include <
 va_start, va_arg and va_end macros. I'm gonna use format distinguisher when string meet % character. Others will just putchar.
 To prevent just one % character making undefied result, i'm gonna use (format[i] == % && format[i + 1]). This make sure % used as format specifier.
 
-
+2026.01.16 15:04
+"11" updated.
+updating printf.
+made all types and refined helper functions.
+used "0123456789"[n % 10] to put numbers.
 
