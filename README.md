@@ -115,3 +115,9 @@ updating printf.
 made all types and refined helper functions.
 used "0123456789"[n % 10] to put numbers.
 
+2026.01.17 00:00 
+"12" updated.
+finished printf.
+norminette, testing passed.
+when dealing with pointer, used casting unsigned long long to make it single integer.
+"(nil)"(pointer to null) is valid answer for invalid argument.
